@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+
+<script src="css/anime.js"></script>
+<script>
+    function cnvs_logCoordinates(e) {
+        x = e.offsetX;
+        y = e.offsetY;
+      console.log("("+x+","+y+")");
+    }
+
+    function cnvs_getCoordinates(e) {
+        x = e.offsetX;
+        y = e.offsetY;
+        document.getElementById("xycoordinates").innerHTML = "Coordinate: (" + x + "," + y + ")";
+    }
+
+    function cnvs_clearCoordinates() {
+        document.getElementById("xycoordinates").innerHTML = "";
+    }
+</script>
+
+<div id="Board" onmousedown="cnvs_logCoordinates(event)" onmousemove="cnvs_getCoordinates(event)" onmouseout="cnvs_clearCoordinates()">
+    <!-- Five blue players -->
+    <div class="circle blue p1" style="left: 330px; top: 175px">1</div>
+    <div class="circle blue p2" style="left: 370px; top: 175px;">2</div>
+    <div class="circle blue" style="left: 415px; top: 175px;">3</div>
+    <div class="circle blue" style="left: 393px; top: 153px;">4</div>
+    <div class="circle blue p5" style="left: 350px; top: 195px;">5</div>
+
+    <!-- Five red players -->
+    <div class="circle red" style="left: 173px; top: 650px;">6</div>
+    <div class="circle red p7" style="left: 230px; top: 650px;">7</div>
+    <div class="circle red" style="left: 280px; top: 650px;">8</div>
+    <div class="circle red p9" style="left: 200px; top: 675px;">9</div>
+    <div class="circle red" style="left: 260px;top: 675px;">10</div>
+
+    <!-- Create a smoke -->
+    <div id="smoke" class="smoke" style="border: red 1px solid; left: 324px; top: 300px;"></div>
+
+</div>
+<div style="display: block; margin: 10px;" id="player">
+    <button class="play-btn">PLAY</button>
+    <button class="pause-btn">PAUSE</button>
+    <input class="progress" type="range" step=".001" min="0" max="100" value="0"></input>
+</div>
+<div style="display: block;" id="xycoordinates"></div>
+
+<script>
+    // Delay smoke and fade it in
+    var smokeGrenade = document.getElementById('smoke');
+    smokeGrenade.style.opacity = '0';
+    //setTimeout(showSmokeGrenade, 2500);
+
+    function showSmokeGrenade(){
+        smokeGrenade.style.display = 'inline-block';
+    }
+
+    var timeline = anime.timeline({
+        easing: 'linear',
+        autoplay: false
+    });
+
+    timeline
+    .add({
+        targets: '.p1',
+        keyframes: [
+            {translateX: 250},
+            {translateY: 170, delay: 500, duration: 2500}
+        ]
+    }, 0).add({
+        targets: '.p5',
+        keyframes: [
+            {translateY: -20, duration: 2500},
+            {translateX: -250, delay: 1000}
+        ]
+    }, 0).add({
+        targets: '.smoke',
+        opacity: '1'
+    }, '-=1150').add({
+        targets: '.p9',
+        keyframes: [
+            {translateX: -85},
+            {translateY: -250},
+        ]
+    }, 0);
+
+    document.querySelector('.play-btn').onclick = timeline.play;
+    document.querySelector('.pause-btn').onclick = timeline.pause;
+    var progressBar = document.querySelector('.progress');
+
+    progressBar.addEventListener('input', function() {
+      timeline.seek(timeline.duration * (progressBar.value / 100));
+    });
+
+</script>
+</body>
+</html>

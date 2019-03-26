@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+}
+
+#Board {
+    text-align: left;
+    width: 660px;
+    height: 720px;
+    display: block;
+    background-image: url("../map.png");
+    margin: auto;
+    position: relative;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align:center;
+    position: absolute;
+}
+
+.red {
+    background-color: orangered;
+}
+
+.blue {
+    background-color: dodgerblue;
+}
+
+.smoke {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    position: absolute;
+    text-align:center;
+    background-color: darkorange;
+}
