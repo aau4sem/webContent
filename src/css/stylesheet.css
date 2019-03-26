@@ -5,9 +5,9 @@ body {
 #Board {
     text-align: left;
     width: 660px;
-    height: 720px;
+    height: 667px;
     display: block;
-    background-image: url("../map.png");
+    background-image: url("https://images.unsplash.com/photo-1508796079212-a4b83cbf734d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
     margin: auto;
     position: relative;
 }
