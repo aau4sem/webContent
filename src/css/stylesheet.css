@@ -1,15 +1,83 @@
 body {
+    margin: 0;
     text-align: center;
 }
 
-#Board {
-    text-align: left;
-    width: 660px;
+#wrapper {
+    margin: 10px auto auto auto;
+    width: calc(1000px + 69px);
+}
+
+.board-and-levels {
+}
+
+.board {
+    width: 1000px;
     height: 667px;
-    display: block;
+    display: inline-block;
     background-image: url("https://images.unsplash.com/photo-1508796079212-a4b83cbf734d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
-    margin: auto;
     position: relative;
+    margin: auto;
+}
+
+.levels {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.levels p {
+    margin: 0 10px 15px 10px;
+    font-weight: bold;
+}
+
+.levels button {
+    display: block;
+    margin: auto auto 15px auto;
+    width: 50px;
+    height: 40px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.objects-and-media {
+    width: calc(100% - 69px);
+    margin-top: 20px;
+}
+
+.object-list {
+    width: 50%;
+    float:left;
+
+    margin-top: 10px;
+}
+
+.object-list select {
+    width: 200px;
+    height: 50px;
+    text-align-last: center;
+}
+
+.play-options {
+    width: 50%;
+    float:right;
+}
+
+.slider {
+}
+
+.slider input {
+    width: 250px;
+}
+
+.media-options {
+    margin-top: 15px;
+}
+
+.media-options button {
+    margin: 0 20px 0 20px;
+    height: 30px;
+    width: 80px;
+    font-size: 10pt;
 }
 
 .circle {
