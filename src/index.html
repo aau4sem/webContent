@@ -8,8 +8,9 @@
 <body>
 
 <script src="css/anime.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script>
-    /*
     function cnvs_logCoordinates(e) {
         x = e.offsetX;
         y = e.offsetY;
@@ -19,18 +20,14 @@
     function cnvs_getCoordinates(e) {
         x = e.offsetX;
         y = e.offsetY;
-        document.getElementById("xycoordinates").innerHTML = "Coordinate: (" + x + "," + y + ")";
+        document.getElementById("coordinates-text").innerHTML = "(" + x + "," + y + ")";
     }
-
-    function cnvs_clearCoordinates() {
-        document.getElementById("xycoordinates").innerHTML = "Hover to find coordinates.";
-    }
-    */
 </script>
+
 <div id="wrapper">
-    <div class="board-and-levels">
-        <div class="board" onmousedown="cnvs_logCoordinates(event)" onmousemove="cnvs_getCoordinates(event)"
-             onmouseout="cnvs_clearCoordinates()">
+    <div class="board-and-levels"> <!--
+             onmouseout="cnvs_clearCoordinates()" -->
+        <div class="board" onmousedown="cnvs_logCoordinates(event)" onmousemove="cnvs_getCoordinates(event)">
             <!-- Five blue players -->
             <div class="circle blue p1" style="left: 100px; top: 550px">1</div>
 
@@ -74,6 +71,40 @@
     </div>
 </div>
 
+<div class="coordinates-box">
+    <p id="coordinates-text" style="margin: 0;">(100, 500)</p>
+</div>
+
+
+
+<script>
+    var $circle = $('.coordinates-box'),
+        $wrapper = $('.board');
+
+    function moveCircle(e) {
+        $circle.css({
+            "left": e.pageX,
+            "top": e.pageY
+        });
+    }
+
+    var flag = false;
+    $($wrapper).mouseover(function(){
+        flag = true;
+        $circle.css({
+           "visibility": "visible"
+        });
+        $($wrapper).on('mousemove', moveCircle);
+    });
+    $($wrapper).mouseout(function(){
+        flag = false;
+        $circle.css({
+            "visibility": "hidden"
+        });
+    });
+
+
+</script>
 <!--
 <div style="display: block; margin: 10px;" id="player">
     <button class="play-btn">PLAY</button>
