@@ -25,8 +25,7 @@
 </script>
 
 <div id="wrapper">
-    <div class="board-and-levels"> <!--
-             onmouseout="cnvs_clearCoordinates()" -->
+    <div class="board-and-levels"> <!-- onmouseout="cnvs_clearCoordinates()" -->
         <div class="board" onmousedown="cnvs_logCoordinates(event)" onmousemove="cnvs_getCoordinates(event)">
             <!-- Five blue players -->
             <div class="circle blue p1" style="left: 100px; top: 550px">1</div>
@@ -47,13 +46,13 @@
 
     <div class="objects-and-media">
         <div class="object-list">
-            <select>
+            <select id="selector">
                 <option>Simultaneously</p></option>
-                <option>GamePiece 1</option>
-                <option>GamePiece 2</option>
-                <option>GamePiece 3</option>
-                <option>GamePiece 4</option>
-                <option>GamePiece 5</option>
+                <option>GamePiece1</option>
+                <option>GamePiece2</option>
+                <option>GamePiece3</option>
+                <option>GamePiece4</option>
+                <option>GamePiece5</option>
             </select>
 
         </div>
@@ -115,6 +114,7 @@
 -->
 </div>
 
+<script src="animations.js"></script>
 
 </body>
 </html>
