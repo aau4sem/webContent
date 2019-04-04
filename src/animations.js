@@ -28,16 +28,36 @@ function GamePiece2() {
     });
 }
 
-var allAnimations = [
-    GamePiece1,
-    GamePiece2
-];
+const allAnimations = [GamePiece1(), GamePiece2()];
 
-function resetAllAnimations(){
-    allAnimations.forEach(function(animation){
-        call(animation().reset);
+function playAllAnimations(){
+    allAnimations.forEach(function (anim) {
+        anim.play();
     });
 }
 
-document.querySelector('.play-btn').onclick = GamePiece1().play;
-document.querySelector('.pause-btn').onclick = resetAllAnimations;
+function resetAllAnimations(){
+    allAnimations.forEach(function (anim) {
+        anim.reset();
+    });
+}
+
+function playSelectedAnimation(){
+    const selected = getSelected().value;
+
+    if (selected === "Simultaneously"){
+        playAllAnimations();
+    } else {
+        window[selected]().play();
+    }
+}
+
+function restartSelectedAnimation(){
+    const selected = getSelected().value;
+
+    window[selected]().restart();
+}
+
+document.querySelector('.play-btn').onclick = playSelectedAnimation;
+document.querySelector('.restart-btn').onclick = restartSelectedAnimation;
+document.querySelector('.reset-btn').onclick = resetAllAnimations;
