@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c9534821-1477-41f8-8cbb-ff434ad381d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/animations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/anime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/anime.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
@@ -17,25 +16,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="38" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="38" />
+            <state relative-caret-position="289">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/animations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="790">
-              <caret line="61" column="73" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="73" />
+            <state relative-caret-position="493">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -43,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/anime.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="1142" column="12" lean-forward="true" selection-start-line="1142" selection-start-column="12" selection-end-line="1142" selection-end-column="12" />
+            <state relative-caret-position="773">
+              <caret line="1295" column="97" selection-start-line="1295" selection-start-column="97" selection-end-line="1295" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -65,8 +65,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/css/stylesheet.css" />
-        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/css/anime.js" />
         <option value="$PROJECT_DIR$/src/animations.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
       </list>
     </option>
   </component>
@@ -142,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1553599733911</updated>
       <workItem from="1553599735086" duration="178000" />
-      <workItem from="1554364862080" duration="4998000" />
+      <workItem from="1554364862080" duration="8017000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1553599800499</created>
@@ -158,11 +159,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554287939559</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="+ It is now possible to play single animations or all at once.&#10;+ It is now possible to reset ALL animations.&#10;- Issues: &#10;Whenever we use Window[&quot;&quot;]() it creates a new instance which is not ideal and causes some errors. Instead we should try to create a way to link the &lt;Select&gt;&lt;Option&gt; with a function or something like that.">
+      <created>1554370025393</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554370025394</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11756000" />
+    <option name="totallyTimeSpent" value="14775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -206,7 +214,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="+ Added coordinates following the mouse cursor while inside the board area.&#10;+ Added logging coordinates by clicking anywhere on the board. They will be logged in the console." />
-    <option name="LAST_COMMIT_MESSAGE" value="+ Added coordinates following the mouse cursor while inside the board area.&#10;+ Added logging coordinates by clicking anywhere on the board. They will be logged in the console." />
+    <MESSAGE value="+ It is now possible to play single animations or all at once.&#10;+ It is now possible to reset ALL animations.&#10;- Issues: &#10;Whenever we use Window[&quot;&quot;]() it creates a new instance which is not ideal and causes some errors. Instead we should try to create a way to link the &lt;Select&gt;&lt;Option&gt; with a function or something like that." />
+    <option name="LAST_COMMIT_MESSAGE" value="+ It is now possible to play single animations or all at once.&#10;+ It is now possible to reset ALL animations.&#10;- Issues: &#10;Whenever we use Window[&quot;&quot;]() it creates a new instance which is not ideal and causes some errors. Instead we should try to create a way to link the &lt;Select&gt;&lt;Option&gt; with a function or something like that." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/css/stylesheet.css">
@@ -225,29 +234,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="38" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/anime.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="1142" column="12" lean-forward="true" selection-start-line="1142" selection-start-column="12" selection-end-line="1142" selection-end-column="12" />
+        <state relative-caret-position="773">
+          <caret line="1295" column="97" selection-start-line="1295" selection-start-column="97" selection-end-line="1295" selection-end-column="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/animations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="61" column="73" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="73" />
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

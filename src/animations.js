@@ -7,7 +7,7 @@ function getSelected() {
             break;
         }
     }
-    return opt;
+    return opt.value;
 }
 
 function GamePiece1() {
@@ -28,34 +28,46 @@ function GamePiece2() {
     });
 }
 
-const allAnimations = [GamePiece1(), GamePiece2()];
+const animationsList = {
+    GamePiece1: GamePiece1(),
+    GamePiece2: GamePiece2()
+};
 
-function playAllAnimations(){
-    allAnimations.forEach(function (anim) {
-        anim.play();
-    });
-}
-
-function resetAllAnimations(){
-    allAnimations.forEach(function (anim) {
-        anim.reset();
-    });
-}
-
-function playSelectedAnimation(){
-    const selected = getSelected().value;
-
-    if (selected === "Simultaneously"){
-        playAllAnimations();
-    } else {
-        window[selected]().play();
+function playAllAnimations() {
+    for (const key in animationsList){
+        animationsList[key].play();
     }
 }
 
-function restartSelectedAnimation(){
-    const selected = getSelected().value;
+function resetAllAnimations() {
+    for (const key in animationsList){
+        animationsList[key].reset();
+    }
+}
 
-    window[selected]().restart();
+function playSelectedAnimation() {
+    if (getSelected() === "Simultaneously") {
+        playAllAnimations();
+    } else {
+        getSelectedGamePiece().play();
+    }
+}
+
+function restartSelectedAnimation() {
+    if (getSelected() === "Simultaneously") {
+        resetAllAnimations();
+        playAllAnimations();
+    } else {
+        getSelectedGamePiece().restart();
+    }
+}
+
+function getSelectedGamePiece() {
+    return animationsList[getSelected()];
+}
+
+function resetSelectedAnimation(){
+    getSelectedGamePiece().reset();
 }
 
 document.querySelector('.play-btn').onclick = playSelectedAnimation;

@@ -11,13 +11,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
-    function cnvs_logCoordinates(e) {
+    function logCoordinates(e) {
         x = e.offsetX;
         y = e.offsetY;
         console.log("(" + x + "," + y + ")");
     }
 
-    function cnvs_getCoordinates(e) {
+    function printCoordinates(e) {
         x = e.offsetX;
         y = e.offsetY;
         document.getElementById("coordinates-text").innerHTML = "(" + x + "," + y + ")";
@@ -26,7 +26,7 @@
 
 <div id="wrapper">
     <div class="board-and-levels"> <!-- onmouseout="cnvs_clearCoordinates()" -->
-        <div class="board" onmousedown="cnvs_logCoordinates(event)" onmousemove="cnvs_getCoordinates(event)">
+        <div class="board" onmousedown="logCoordinates(event)" onmousemove="printCoordinates(event)">
             <!-- Five blue players -->
             <div class="circle blue p1" style="left: 100px; top: 550px">1</div>
 
@@ -76,7 +76,6 @@
 </div>
 
 
-
 <script>
     var $circle = $('.coordinates-box'),
         $wrapper = $('.board');
@@ -89,30 +88,21 @@
     }
 
     var flag = false;
-    $($wrapper).mouseover(function(){
+    $($wrapper).mouseover(function () {
         flag = true;
         $circle.css({
-           "visibility": "visible"
+            "visibility": "visible"
         });
         $($wrapper).on('mousemove', moveCircle);
     });
-    $($wrapper).mouseout(function(){
+    $($wrapper).mouseout(function () {
         flag = false;
         $circle.css({
             "visibility": "hidden"
         });
     });
 
-
 </script>
-<!--
-<div style="display: block; margin: 10px;" id="player">
-    <button class="play-btn">PLAY</button>
-    <button class="pause-btn">PAUSE</button>
-    <input class="progress" type="range" step=".001" min="0" max="100" value="0"></input>
-</div>
-<div style="display: block;" id="xycoordinates">Hover to find coordinates.</div>
--->
 </div>
 
 <script src="animations.js"></script>
