@@ -13,9 +13,10 @@ body {
 
 .board {
     width: 1000px;
-    height: 667px;
+    height: 700px;
     display: inline-block;
-    background-image: url("https://images.unsplash.com/photo-1508796079212-a4b83cbf734d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/000/104/368/non_2x/free-soccer-field-vector.jpg");
+    background-size: 100% 100%;
     position: relative;
     margin: auto;
 }

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="776430bd-35ee-4554-b7cb-e76d96c9f0ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/animations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,35 +18,41 @@
     <session id="1229194032">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="5" />
           <entry key="html" value="1" />
+          <entry key="js" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="5" />
           <entry key="HTML" value="1" />
+          <entry key="JavaScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1580" />
-          <entry key="html" value="727" />
+          <entry key="css" value="1622" />
+          <entry key="html" value="827" />
+          <entry key="js" value="185" />
           <entry key="txt" value="214" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1580" />
-          <entry key="HTML" value="727" />
+          <entry key="CSS" value="1622" />
+          <entry key="HTML" value="827" />
+          <entry key="JavaScript" value="185" />
           <entry key="PLAIN_TEXT" value="214" />
         </counts>
       </usages-collector>
@@ -53,13 +63,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-215">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="278">
+              <caret line="69" column="79" selection-start-line="69" selection-start-column="79" selection-end-line="69" selection-end-column="79" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/animations.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="703">
+              <caret line="91" column="74" lean-forward="true" selection-start-line="91" selection-start-column="74" selection-end-line="91" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -67,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -87,8 +106,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/stylesheet.css" />
+        <option value="$PROJECT_DIR$/animations.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -99,8 +119,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="59" />
+    <option name="y" value="47" />
     <option name="width" value="1921" />
     <option name="height" value="982" />
   </component>
@@ -163,6 +182,8 @@
       <updated>1554205258925</updated>
       <workItem from="1554205260230" duration="3622000" />
       <workItem from="1554295227778" duration="637000" />
+      <workItem from="1554664129026" duration="1316000" />
+      <workItem from="1554729672955" duration="999000" />
     </task>
     <task id="LOCAL-00001" summary="+ Redesigned template, no longer functional but is better structured.&#10;+ Added levels.&#10;+ Added dropdown to choose between animations.">
       <created>1554208815467</created>
@@ -175,10 +196,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4259000" />
+    <option name="totallyTimeSpent" value="6574000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="59" width="1921" height="982" extended-state="0" />
+    <frame x="0" y="47" width="1921" height="982" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -220,22 +242,29 @@
     <option name="LAST_COMMIT_MESSAGE" value="+ Redesigned template, no longer functional but is better structured.&#10;+ Added levels.&#10;+ Added dropdown to choose between animations." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/animations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-215">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="703">
+          <caret line="91" column="74" lean-forward="true" selection-start-line="91" selection-start-column="74" selection-end-line="91" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="69" column="79" selection-start-line="69" selection-start-column="79" selection-end-line="69" selection-end-column="79" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

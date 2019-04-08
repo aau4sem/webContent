@@ -13,8 +13,15 @@ function getSelected() {
 function GamePiece1() {
     return anime({
         targets: '.p1',
-        translateX: 270,
+        keyframes: [
+            {left:656 , top:508},
+            {left:458 , top:522},
+            {left:276 , top:526},
+            {left:202 , top:430},
+        ],
         loop: false,
+        easing: 'linear',
+        duration: 2500,
         autoplay: false
     });
 }
@@ -22,8 +29,15 @@ function GamePiece1() {
 function GamePiece2() {
     return anime({
         targets: '.p9',
-        translateX: 270,
+        keyframes: [
+            {left:687 , top:353},
+            {left:607 , top:217},
+            {left:334 , top:165},
+            {left:263 , top:282},
+        ],
         loop: false,
+        easing: 'linear',
+        duration: 2500,
         autoplay: false
     });
 }
@@ -67,9 +81,13 @@ function getSelectedGamePiece() {
 }
 
 function resetSelectedAnimation(){
-    getSelectedGamePiece().reset();
+    if (getSelected() === "Simultaneously") {
+        resetAllAnimations();
+    } else {
+        getSelectedGamePiece().reset();
+    }
 }
 
 document.querySelector('.play-btn').onclick = playSelectedAnimation;
 document.querySelector('.restart-btn').onclick = restartSelectedAnimation;
-document.querySelector('.reset-btn').onclick = resetAllAnimations;
+document.querySelector('.reset-btn').onclick = resetSelectedAnimation;

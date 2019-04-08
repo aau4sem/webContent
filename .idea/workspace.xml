@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9534821-1477-41f8-8cbb-ff434ad381d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/animations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/anime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/anime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="c9534821-1477-41f8-8cbb-ff434ad381d3" name="Default Changelist" comment="Initial commit" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +14,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="433">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -143,7 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1553599733911</updated>
       <workItem from="1553599735086" duration="178000" />
-      <workItem from="1554364862080" duration="8017000" />
+      <workItem from="1554364862080" duration="8696000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1553599800499</created>
@@ -166,15 +161,21 @@
       <option name="project" value="LOCAL" />
       <updated>1554370025394</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="+ No longer creates a new instance when clicking multiple times on Play or a mix between the buttons.&#10;+ It is not possible to play, restart and reset a particular animation or all at once.&#10;&#10;#+ Initial structure has been created. This will be the first template.">
+      <created>1554388707558</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554388707558</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14775000" />
+    <option name="totallyTimeSpent" value="15454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20126449" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -215,7 +216,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="+ Added coordinates following the mouse cursor while inside the board area.&#10;+ Added logging coordinates by clicking anywhere on the board. They will be logged in the console." />
     <MESSAGE value="+ It is now possible to play single animations or all at once.&#10;+ It is now possible to reset ALL animations.&#10;- Issues: &#10;Whenever we use Window[&quot;&quot;]() it creates a new instance which is not ideal and causes some errors. Instead we should try to create a way to link the &lt;Select&gt;&lt;Option&gt; with a function or something like that." />
-    <option name="LAST_COMMIT_MESSAGE" value="+ It is now possible to play single animations or all at once.&#10;+ It is now possible to reset ALL animations.&#10;- Issues: &#10;Whenever we use Window[&quot;&quot;]() it creates a new instance which is not ideal and causes some errors. Instead we should try to create a way to link the &lt;Select&gt;&lt;Option&gt; with a function or something like that." />
+    <MESSAGE value="+ No longer creates a new instance when clicking multiple times on Play or a mix between the buttons.&#10;+ It is not possible to play, restart and reset a particular animation or all at once.&#10;&#10;#+ Initial structure has been created. This will be the first template." />
+    <option name="LAST_COMMIT_MESSAGE" value="+ No longer creates a new instance when clicking multiple times on Play or a mix between the buttons.&#10;+ It is not possible to play, restart and reset a particular animation or all at once.&#10;&#10;#+ Initial structure has been created. This will be the first template." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/css/stylesheet.css">
@@ -250,8 +252,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="433">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
